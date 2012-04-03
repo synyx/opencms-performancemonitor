@@ -8,7 +8,7 @@ Most OpenCms pages consist of several sub-elements that are included by the main
 
 # Setup
 
-To setup the monitoring you need to add the project jar and the [current version of Perf4J](http://perf4j.codehaus.org/downloads.html) to you WEB-INF/lib folder. Also, add the following filter declaration to your web.xml:
+To setup the monitoring you need to add the [project jar](http://nexus.synyx.de/content/repositories/public-releases/org/synyx/opencms/performance-monitor/0.1/performance-monitor-0.1.jar) and the [current version of Perf4J](http://perf4j.codehaus.org/downloads.html) to you WEB-INF/lib folder. Also, add the following filter declaration to your web.xml:
 
 <pre><code>
     &lt;filter&gt;
