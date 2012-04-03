@@ -11,17 +11,17 @@ Most OpenCms pages consist of several sub-elements that are included by the main
 To setup the monitoring you need to add the project jar and the [current version of Perf4J](http://perf4j.codehaus.org/downloads.html) to you WEB-INF/lib folder. Also, add the following filter declaration to your web.xml:
 
 <pre><code>
-    <filter>
-        <filter-name>performanceMonitor</filter-name>
-        <filter-class>org.synyx.opencms.performancemonitor.MonitorFilter</filter-class>
-    </filter>
+    &lt;filter&gt;
+        &lt;filter-name&gt;performanceMonitor&lt;/filter-name&gt;
+        &lt;filter-class&gt;org.synyx.opencms.performancemonitor.MonitorFilter&lt;/filter-class&gt;
+    &lt;/filter&gt;
 
-    <filter-mapping>
-        <filter-name>performanceMonitor</filter-name>
-        <url-pattern>/*</url-pattern>
-        <dispatcher>REQUEST</dispatcher>
-        <dispatcher>INCLUDE</dispatcher>
-    </filter-mapping>
+    &lt;filter-mapping&gt;
+        &lt;filter-name&gt;performanceMonitor&lt;/filter-name&gt;
+        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+        &lt;dispatcher&gt;REQUEST&lt;/dispatcher&gt;
+        &lt;dispatcher&gt;INCLUDE&lt;/dispatcher&gt;
+    &lt;/filter-mapping&gt;
 </code></pre>
 
 The filter will catch all requests that are dispatched via REQUEST (an incoming request to the complete page) and INCLUDE (the elements of the template).
