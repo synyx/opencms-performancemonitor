@@ -69,3 +69,7 @@ If the line starts with REQUEST this is the data for the incoming request, which
 If there is an element that is either called a lot of times or takes some time for rendering this might be a possible candidate to look into. See if it can be cached or optimize the code in it.
 
 You won't see cached elements in the code as these calls are not dispatched to JSPs.
+
+# License 
+
+opencms-performancemonitor is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
